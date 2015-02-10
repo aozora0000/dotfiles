@@ -1,0 +1,32 @@
+#################################
+# 環境設定ファイル呼び出し
+#################################
+source $HOME/.profile/.env
+source $HOME/.profile/.path
+
+#################################
+# エイリアスファイル呼び出し
+#################################
+source $HOME/.profile/.alias
+
+#################################
+# ファンクション呼び出し
+#################################
+source $HOME/.profile/.functions
+
+#################################
+# ターミナル系呼び出し
+#################################
+source $HOME/.profile/.ohmyzsh
+source $HOME/.profile/.terminal
+source $HOME/.profile/.autojump
+
+#################################
+# 開発系呼び出し
+#################################
+source $HOME/.profile/.boot2docker
+source $HOME/.profile/.phpbrew
+source $HOME/.profile/.rbenv
+source $HOME/.profile/.pythonbrew
+source $HOME/.profile/.nodebrew
+source $HOME/.profile/.gobrew
