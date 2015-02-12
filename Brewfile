@@ -25,6 +25,7 @@ cask install firefox
 cask install virtualbox
 cask install vagrant
 cask install alfred
+cask install caffein
 cask install dropbox
 cask install evernote
 cask install sequel-pro
@@ -37,5 +38,7 @@ cask install coteditor
 cask install istat-menus
 cask install bartender
 cask install skype
+cask install filezilla
+cask install opera-mail
 
 cask alfred link
