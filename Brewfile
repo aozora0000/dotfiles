@@ -4,6 +4,7 @@ upgrade
 tap homebrew/versions
 tap phinze/homebrew-cask
 tap homebrew/binary
+tap sanemat/font
 
 install brew-cask
 install zsh
@@ -25,11 +26,10 @@ cask install firefox
 cask install virtualbox
 cask install vagrant
 cask install alfred
-cask install caffein
 cask install dropbox
 cask install evernote
 cask install sequel-pro
-cask install lastpass-universal
+cask install lastpass
 cask install openoffice
 cask install bettertouchtool
 cask install google-japanese-ime
@@ -40,5 +40,7 @@ cask install bartender
 cask install skype
 cask install filezilla
 cask install opera-mail
+cask install xquartz
+cask install ricty
 
 cask alfred link
