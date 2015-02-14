@@ -47,6 +47,7 @@ cask install flash-player
 cask install java
 cask install xquartz
 cask install ricty
+cask install macs-fan-control
 ask install butter
 
 
