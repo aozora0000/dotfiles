@@ -16,11 +16,11 @@ install ansible
 install wget
 install curl
 install jq
+install tree
 install vim
 install boot2docker
 install git-ftp
 install selenium-server-standalone
-
 
 cask install iterm2
 cask install google-chrome
