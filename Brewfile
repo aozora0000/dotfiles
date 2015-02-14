@@ -1,11 +1,12 @@
+# アップデート
 update
 upgrade
-
+# リポジトリ追加
 tap homebrew/versions
 tap phinze/homebrew-cask
 tap homebrew/binary
 tap sanemat/font
-
+# パッケージインストール
 install brew-cask
 install zsh
 install autojump
@@ -21,8 +22,12 @@ install vim
 install boot2docker
 install git-ftp
 install selenium-server-standalone
-
-
+install rbenv
+install ruby-build
+install rbenv-gemset
+install rbenv-gem-rehash
+install git-extras
+# Caskパッケージインストール
 cask install iterm2
 cask install google-chrome
 cask install firefox
@@ -48,7 +53,6 @@ cask install java
 cask install xquartz
 cask install ricty
 cask install macs-fan-control
-ask install butter
-
-
+cask install butter
+# alfred追加
 cask alfred link
