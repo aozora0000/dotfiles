@@ -1,0 +1,4 @@
+"viモードを外す
+set nocompatible
+"バックスペース利用
+set backspace=indent,eol,start

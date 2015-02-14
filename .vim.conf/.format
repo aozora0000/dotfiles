@@ -1,0 +1,16 @@
+"インデントをスペース4つ分に設定
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
+set noexpandtab
+"オートインデント
+set smartindent
+"新しい行のインデントを現在行と同じにする
+set autoindent
+"括弧入力時の対応する括弧を表示
+set showmatch
+"行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
+set smarttab
+"TAB,EOFなどを可視化する
+set list
+set listchars=tab:>-,extends:<,trail:-

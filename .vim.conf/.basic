@@ -1,0 +1,24 @@
+"行番号を表示する
+set number
+"ルーラーを表示する
+set ruler
+"編集中のファイル名を表示
+set title
+"コマンドラインでTABで補完できるようにする
+set wildchar=<C-Z>
+"バックアップを作成しない
+set nobackup
+"ターミナル上からの張り付けを許可
+set paste
+"ステータスラインにコマンドを表示
+set showcmd
+"ステータスラインを常に表示
+set laststatus=2
+"読み込み専用かどうか表示
+set statusline+=%r
+"ファイルフォーマット表示
+set statusline+=[%{&fileformat}]
+"文字コード表示
+set statusline+=[%{has('multi_byte')&&\&fileencoding!=''?&fileencoding:&encoding}]
+"ファイルタイプ表示
+set statusline+=%y

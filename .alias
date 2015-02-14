@@ -3,3 +3,13 @@
 #################################
 alias ll='ls -la'
 alias zshconfig="atom ~/.zshrc"
+
+#################################
+# brew doctor用
+#################################
+
+
+#################################
+# Selenium-Server用
+#################################
+alias selenium-server="selenium-server -Dwebdriver.firefox.bin=${HOME}/Applications/Firefox.app/Contents/MacOS/firefox-bin"

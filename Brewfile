@@ -19,6 +19,8 @@ install jq
 install vim
 install boot2docker
 install git-ftp
+install selenium-server-standalone
+
 
 cask install iterm2
 cask install google-chrome
@@ -40,7 +42,11 @@ cask install bartender
 cask install skype
 cask install filezilla
 cask install opera-mail
+cask install flash-player
+cask install java
 cask install xquartz
 cask install ricty
+ask install butter
+
 
 cask alfred link
