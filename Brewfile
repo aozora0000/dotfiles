@@ -27,6 +27,20 @@ install ruby-build
 install rbenv-gemset
 install rbenv-gem-rehash
 install git-extras
+install mariadb
+install openssl
+install readline
+install re2c
+install mcrypt
+install libyaml
+install libxml2
+install icu4c
+install curl
+install wget
+install jpeg
+install pcre
+install automake
+install autoconf
 # Caskパッケージインストール
 cask install iterm2
 cask install google-chrome
