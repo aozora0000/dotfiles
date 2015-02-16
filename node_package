@@ -1,0 +1,4 @@
+npm i -g phantomjs
+npm i -g coffee-script
+npm i -g pulldown
+npm i -g grunt-cli

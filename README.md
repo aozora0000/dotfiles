@@ -55,9 +55,12 @@ echo "source ~/.profile/.vimrc" > ~/.vimrc
 ### PHP
 
 ```.shell
+// phpbrew インストール
 curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
 chmod a+x phpbrew
 mv phpbrew /usr/local/bin/phpbrew
+
+// PHPビルドインストール
 phpbrew init
 phpbrew known
 phpbrew install 5.6.5 +default +pdo +mysql
@@ -65,4 +68,38 @@ phpbrew switch 5.6.5
 phpbrew ext install xdebug
 phpbrew ext install memcached
 phpbrew ext install yaml
+
+// php.ini設定
+sed -i "s/phar.readonly.*/phar.readonly = Off/g" ~/.phpbrew/php/php-*/etc/php.ini
+cat ~/.phpbrew/php/php-*/etc/php.ini | grep  phar.readonly
+sed -i "s/^;date.timezone.*/date.timezone = \"Asia\/Tokyo\"/" ~/.phpbrew/php/php-*/etc/php.ini
+cat ~/.phpbrew/php/php-*/etc/php.ini | grep date.timezone
+sed -i "s/^expose_php = On$/expose_php = Off/" ~/.phpbrew/php/php-*/etc/php.ini
+cat ~/.phpbrew/php/php-*/etc/php.ini | grep expose_php
+// composerインストトール
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+
+// phpunitインストトール
+wget https://phar.phpunit.de/phpunit.phar
+chmod a+x phpunit.phar
+mv phpunit.phar /usr/local/bin/phpunit
+
+// boxインストール
+curl -LSs http://box-project.org/installer.php | php
+chmod a+x box.phar
+mv box.phar /usr/local/bin/box
+
+// codeceptインストール
+wget http://codeception.com/codecept.phar
+chmod a+x codecept.phar
+mv codecept.phar /usr/local/bin/codecept
+
+
+//
+```
+
+### ATOMエディタ
+```.shell
+apm stars --install
 ```
