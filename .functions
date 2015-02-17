@@ -15,3 +15,17 @@ ssh-config() {
 ssh-open() {
     atom ~/.ssh/conf.d
 }
+
+#################################
+# フォルダ一括読み込み
+#################################
+
+read-dir() {
+    DIRPATH=$1
+    for FILE in ${DIRPATH}*
+    do
+        if [ -f $FILE ];then
+            source ${FILE}
+        fi
+    done
+}

@@ -15,11 +15,15 @@ source $HOME/.profile/.alias
 source $HOME/.profile/.functions
 
 #################################
+# .zsh.d呼び出し
+#################################
+read-dir `pwd`/.zsh.d/
+
+#################################
 # ターミナル系呼び出し
 #################################
 source $HOME/.profile/.ohmyzsh
 source $HOME/.profile/.terminal
-source $HOME/.profile/.autojump
 
 #################################
 # 開発系呼び出し
