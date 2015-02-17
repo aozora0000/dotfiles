@@ -41,6 +41,7 @@ install jpeg
 install pcre
 install automake
 install autoconf
+install apib
 # Caskパッケージインストール
 cask install iterm2
 cask install google-chrome
