@@ -94,12 +94,37 @@ mv box.phar /usr/local/bin/box
 wget http://codeception.com/codecept.phar
 chmod a+x codecept.phar
 mv codecept.phar /usr/local/bin/codecept
-
-
-//
 ```
 
 ### ATOMエディタ
 ```.shell
 apm stars --install
+```
+
+### DNSMASQS
+```.shell
+//設定ファイルコピー
+cp $(brew list dnsmasq | grep /dnsmasq.conf.example$) /usr/local/etc/dnsmasq.conf
+
+//自動起動追加
+sudo cp $(brew list dnsmasq | grep /homebrew.mxcl.dnsmasq.plist$) /Library/LaunchDaemons/
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+
+//自動起動から外す
+sudo launchctl unloadload /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+
+//設定ファイル
+vi /usr/local/etc/dnsmasq.conf
+
+# wildcardでの名前解決を許す?
+bind-interfaces
+# launch deamonで動かすために常にforgroundで起動
+keep-in-foreground  
+#  /etc/resolve.confを見ない
+no-resolv
+
+#  *.dev ドメインへのアクセスは全てlocalに。
+address=/dev/127.0.0.1
+#  名前解決する時にローカルを見るためには自動的にloopbackしてくれんので、明示的に設定するとかなんとか?
+listen-address=127.0.0.1 
 ```
