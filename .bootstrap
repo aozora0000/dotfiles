@@ -17,20 +17,9 @@ source $HOME/.profile/.functions
 #################################
 # .zsh.d呼び出し
 #################################
-read-dir `pwd`/.zsh.d/
-
-#################################
-# ターミナル系呼び出し
-#################################
-source $HOME/.profile/.ohmyzsh
-source $HOME/.profile/.terminal
+read-dir `pwd`/.zsh.d/*.zsh
 
 #################################
 # 開発系呼び出し
 #################################
-source $HOME/.profile/.boot2docker
-source $HOME/.profile/.phpbrew
-source $HOME/.profile/.rbenv
-source $HOME/.profile/.pythonbrew
-source $HOME/.profile/.nodebrew
-source $HOME/.profile/.gobrew
+read-dir `pwd`/.brew.d/*.zsh
