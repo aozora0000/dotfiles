@@ -17,9 +17,9 @@ source $HOME/.profile/.functions
 #################################
 # .zsh.d呼び出し
 #################################
-read-dir `pwd`/.zsh.d/*.zsh
+read-dir $HOME/.profile/.zsh.d/
 
 #################################
 # 開発系呼び出し
 #################################
-read-dir `pwd`/.brew.d/*.zsh
+read-dir $HOME/.profile/.brew.d/

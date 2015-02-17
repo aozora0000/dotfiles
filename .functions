@@ -22,7 +22,7 @@ ssh-open() {
 
 read-dir() {
     DIRPATH=$1
-    for FILE in ${DIRPATH}
+    for FILE in ${DIRPATH}*.zsh
     do
         if [ -f $FILE ];then
             source ${FILE}

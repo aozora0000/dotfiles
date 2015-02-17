@@ -42,6 +42,7 @@ install pcre
 install automake
 install autoconf
 install apib
+install ricty
 # Caskパッケージインストール
 cask install iterm2
 cask install google-chrome
@@ -66,7 +67,6 @@ cask install opera-mail
 cask install flash-player
 cask install java
 cask install xquartz
-cask install ricty
 cask install macs-fan-control
 cask install butter
 # alfred追加
