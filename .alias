@@ -5,11 +5,12 @@ alias ll='ls -la'
 alias zshconfig="atom ~/.zshrc"
 
 #################################
-# brew doctor用
-#################################
-
-#################################
 # Selenium-Server用
 #################################
 export firefox="~/Applications/Firefox.app/Contents/MacOS/firefox-bin"
 alias selenium-server="selenium-server -Dwebdriver.firefox.bin=${firefox}"
+
+#################################
+# swift-cli用
+#################################
+alias swift-cli='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
