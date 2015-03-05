@@ -14,3 +14,10 @@ alias selenium-server="selenium-server -browser browserName=firefox,version=30,p
 # swift-cli用
 #################################
 alias swift-cli='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
+
+#################################
+# PHP開発用
+#################################
+alias phpcs='phpcs --standard=PSR2 --colors --report-width=auto'
+alias phpcbf='phpcbf --standard=PSR2'
+alias php-cs-fixer='php-cs-fixer --level=psr2 --fixers=-psr0,-indentation,-braces fix'

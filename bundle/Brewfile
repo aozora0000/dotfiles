@@ -35,6 +35,7 @@ install mcrypt
 install libyaml
 install libxml2
 install icu4c
+install netcat
 install curl
 install wget
 install jpeg
@@ -43,6 +44,8 @@ install automake
 install autoconf
 install apib
 install ricty
+install graphviz
+install qcachegrind
 # Caskパッケージインストール
 cask install iterm2
 cask install google-chrome
