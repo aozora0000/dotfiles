@@ -19,6 +19,7 @@ install curl
 install jq
 install tree
 install vim
+install iperf
 install boot2docker
 install git-ftp
 install selenium-server-standalone
