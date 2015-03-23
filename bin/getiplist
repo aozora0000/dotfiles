@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+$range = trim(fgets(STDIN));
+if(empty($range)) {
+    exit("Input Not Valid\n");
+}
+$ranges = explode("-",$range);
+
+$startip = explode(".",trim($ranges[0]));
+$endip   = explode(".",trim($ranges[1]));
+
+function output($a,$b,$c,$d) {
+    printf("%d.%d.%d.%d\n",$a,$b,$c,$d).PHP_EOL;
+}
+
+for($i = $startip[0]; $i <= $endip[0]; ++$i) {
+    for($v = $startip[1]; $v <= $endip[1]; ++$v) {
+        for($k = $startip[2]; $k <= $endip[2]; ++$k) {
+            for($h = $startip[3]; $h <= $endip[3]; ++$h) {
+                output($i,$v,$k,$h);
+            }
+        }
+    }
+}
