@@ -29,3 +29,8 @@ read-dir() {
         fi
     done
 }
+
+whereis() {
+    IP=$1
+    whois $IP | grep descr | grep -o "[0-9]\{3\}-[0-9]\{4\}"
+}
