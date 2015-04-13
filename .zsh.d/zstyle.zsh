@@ -1,7 +1,9 @@
 #################################
 # terminal設定
 #################################
-RPROMPT=""
+DEFAULT=$'\U1F363 ' # ひつじ
+ERROR=$'\xF0\x9f\x8d\xba'   # スシ
+PROMPT=$'%(?.${DEFAULT}.${ERROR}) '
 
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
