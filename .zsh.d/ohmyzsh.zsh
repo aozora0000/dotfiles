@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="kphoen"
-plugins=(git atom autojump brew brew-cask ruby osx bundler brew rails emoji-clock composer gem vagrant tig)
+plugins=(git atom autojump brew brew-cask ruby osx bundler brew rails emoji-clock composer gem vagrant tig aws vagrant)
 
 export PATH="$PATH:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
