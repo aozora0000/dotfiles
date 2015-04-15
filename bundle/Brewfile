@@ -9,6 +9,7 @@ tap sanemat/font
 # パッケージインストール
 install brew-cask
 install zsh
+install pkill
 install autojump
 install git
 install tmux
