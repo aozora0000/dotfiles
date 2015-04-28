@@ -5,13 +5,14 @@ upgrade
 tap homebrew/versions
 tap phinze/homebrew-cask
 tap homebrew/binary
-tap sanemat/font
+tap caskroom/fonts
 # パッケージインストール
 install brew-cask
 install zsh
 install pkill
 install autojump
 install git
+install mercurial
 install tmux
 install tig
 install ansible
@@ -23,6 +24,7 @@ install vim
 install iperf
 install boot2docker
 install git-ftp
+install git-now
 install selenium-server-standalone
 install rbenv
 install ruby-build
@@ -48,6 +50,7 @@ install apib
 install ricty
 install graphviz
 install qcachegrind
+install peco
 # Caskパッケージインストール
 cask install iterm2
 cask install google-chrome
@@ -72,7 +75,9 @@ cask install opera-mail
 cask install flash-player
 cask install java
 cask install xquartz
+cask install blink1control
 cask install macs-fan-control
 cask install butter
+cask install hyperswitch
 # alfred追加
 cask alfred link
