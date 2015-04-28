@@ -4,5 +4,6 @@ if [ -z "/usr/local/bin/brew" ];then
 fi
 brew tap homebrew/boneyard && \
 cd $HOME/.profile/bundle && \
-brew bundle &&
-read-dir `pwd`/package/*_package
+brew bundle && \
+read-dir `pwd`/package/*_package && \
+legit install

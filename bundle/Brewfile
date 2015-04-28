@@ -25,6 +25,7 @@ install iperf
 install boot2docker
 install git-ftp
 install git-now
+install legit
 install selenium-server-standalone
 install rbenv
 install ruby-build
