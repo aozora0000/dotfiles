@@ -48,7 +48,6 @@ install pcre
 install automake
 install autoconf
 install apib
-install ricty
 install graphviz
 install qcachegrind
 install peco
@@ -80,5 +79,7 @@ cask install blink1control
 cask install macs-fan-control
 cask install butter
 cask install hyperswitch
+# Cask依存パッケージ
+install ricty
 # alfred追加
 cask alfred link
