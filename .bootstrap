@@ -15,11 +15,17 @@ source $HOME/.profile/.alias
 source $HOME/.profile/.functions
 
 #################################
-# .zsh.d呼び出し
+# .functions.d 呼び出し
+#################################
+read-dir $HOME/.profile/.functions.d/
+
+
+#################################
+# .zsh.d 呼び出し
 #################################
 read-dir $HOME/.profile/.zsh.d/
 
 #################################
-# 開発系呼び出し
+# .brew.d 呼び出し
 #################################
 read-dir $HOME/.profile/.brew.d/
