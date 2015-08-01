@@ -1,0 +1,52 @@
+#!/bin/bash
+[[ -s "$HOME/.pushbullet" ]] && source "$HOME/.pushbullet"
+
+if [ -z "$PUSHBULLET_ACCESS_TOKEN" ]; then
+    echo "ACCESS_TOKEN is not defined!"
+    echo "echo \"export PUSHBULLET_ACCESS_TOKEN=__TOKEN__\" > ~/.bashrc"
+    open "https://www.pushbullet.com/#settings/account"
+fi
+
+function note() {
+    TITLE=$1
+    BODY=$2
+    curl -u $PUSHBULLET_ACCESS_TOKEN: https://api.pushbullet.com/v2/pushes -d type=note -d title="$TITLE" -d body="$BODY"
+}
+
+function link() {
+    TITLE=$1
+    BODY=$2
+    LINK=$3
+    curl -u $PUSHBULLET_ACCESS_TOKEN: https://api.pushbullet.com/v2/pushes -d type=note -d title="$TITLE" -d body="$BODY" -d link="$LINK"
+}
+
+
+
+case ${1} in
+
+    note)
+        note $2 $3
+    ;;
+
+    link)
+        link $2 $3 $4
+    ;;
+
+    file)
+        echo "まだ使えないー"
+    ;;
+
+    help|--help|-h)
+        usage
+    ;;
+
+    version|--version|-v)
+        version
+    ;;
+
+    *)
+        echo "[ERROR] Invalid subcommand '${1}'"
+        usage
+        exit 1
+    ;;
+esac
