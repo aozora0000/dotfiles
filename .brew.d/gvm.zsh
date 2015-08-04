@@ -1,1 +1,1 @@
-[[ -s "/Users/aozora0000/.gvm/bin/gvm-init.sh" ]] && source "/Users/aozora0000/.gvm/bin/gvm-init.sh"
+[[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"

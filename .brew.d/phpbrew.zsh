@@ -1,4 +1,4 @@
 #################################
 # phpbrew設定呼び出し
 #################################
-source ~/.phpbrew/bashrc
+[[ -s "$HOME/.phpbrew/bashrc" ]] && source $HOME/.phpbrew/bashrc

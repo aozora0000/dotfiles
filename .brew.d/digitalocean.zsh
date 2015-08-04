@@ -1,1 +1,1 @@
-[[ -s "$HOME/ownCloud/dropbox/macbookpro/.digitalocean/config" ]] && source $HOME/ownCloud/dropbox/macbookpro/.digitalocean/config
+[[ -s "$HOME/Dropbox/macbookpro/.digitalocean/config" ]] && source $HOME/Dropbox/macbookpro/.digitalocean/config
