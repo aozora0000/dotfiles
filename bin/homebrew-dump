@@ -1,0 +1,3 @@
+#!/bin/bash -l
+mv $HOME/.profile/bundle/Brewfile $HOME/.profile/bundle/Brewfile.old && \
+brew bundle dump --file=$HOME/.profile/bundle/Brewfile
