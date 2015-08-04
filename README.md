@@ -38,6 +38,11 @@ Dropboxを起動・設定する
 
 ```.shell
 ln -s ~/Dropbox/.ssh ~/.ssh
+ls -s ~/Dropbox/macbookpro/.gitconfig ~/.gitconfig
+ls -s ~/Dropbox/macbookpro/.git_template ~/.git_template
+ls -s ~/Dropbox/macbookpro/.aws ~/.aws
+ls -s ~/Dropbox/macbookpro/.ansible.cfg ~/.ansible.cfg
+ls -s ~/Dropbox/macbookpro/.HOMEBREW_GITHUB_API_TOKEN ~/.HOMEBREW_GITHUB_API_TOKEN
 ssh-config
 ```
 ## 5. Vimの設定
@@ -126,5 +131,5 @@ no-resolv
 #  *.dev ドメインへのアクセスは全てlocalに。
 address=/dev/127.0.0.1
 #  名前解決する時にローカルを見るためには自動的にloopbackしてくれんので、明示的に設定するとかなんとか?
-listen-address=127.0.0.1 
+listen-address=127.0.0.1
 ```
