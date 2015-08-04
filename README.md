@@ -32,7 +32,7 @@ echo "source ~/.profile/.bootstrap" > ~/.zshrc
 source ~/.zshrc
 ```
 
-## 4. 公開鍵をハードリンク
+## 4. 公開鍵・その他設定をリンク
 
 Dropboxを起動・設定する
 
