@@ -16,6 +16,11 @@ alias selenium-server="selenium-server -browser browserName=firefox,version=30,p
 alias swift-cli='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
 
 #################################
+# Rsync用
+#################################
+alias rsync='rsync --no-p --exclude-from=$HOME/.rsync/exclude'
+
+#################################
 # PHP開発用
 #################################
 alias phpcs='phpcs --standard=PSR2 --colors --report-width=auto'
