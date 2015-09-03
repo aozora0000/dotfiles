@@ -1,2 +1,3 @@
 #!/bin/bash -l
-curl -sS "http://free.ddo.jp/dnsupdate.php?dn=${DDO_DOMAIN}&pw=${pW3agK0hxj6hEXXJ}"
+[[ -s "$HOME/Dropbox/macbookpro/.ddo" ]] && source $HOME/Dropbox/macbookpro/.ddo && \
+curl -sS "http://free.ddo.jp/dnsupdate.php?dn=${DDO_DOMAIN}&pw=${DDO_PASSWD}"
