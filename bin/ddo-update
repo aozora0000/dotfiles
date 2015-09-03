@@ -1,0 +1,2 @@
+#!/bin/bash -l
+curl -sS "http://free.ddo.jp/dnsupdate.php?dn=${DDO_DOMAIN}&pw=${pW3agK0hxj6hEXXJ}"
