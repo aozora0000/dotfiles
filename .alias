@@ -29,3 +29,8 @@ alias php-cs-fixer='php-cs-fixer --level=psr2 --fixers=-psr0,-indentation,-brace
 alias ctags=/usr/local/Cellar/ctags/5.8_1/bin/ctags
 alias artisan="$(which php) artisan"
 alias phpunit="$(which phpunit) --no-globals-backup"
+
+#################################
+# Mecab用
+#################################
+alias mecab='mecab -d `mecab-config --dicdir`/mecab-ipadic-neologd'

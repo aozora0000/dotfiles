@@ -1,4 +1,5 @@
 source /usr/local/share/zsh/site-functions/_aws
+complete -C aws_completer aws
 
 function bucketExpire() {
     BUCKET=$1
