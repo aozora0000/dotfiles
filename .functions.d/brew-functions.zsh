@@ -8,7 +8,7 @@ function brewcask-upgrade() {
 }
 
 function brew-dump() {
-    rm -rf $HOME/.profile/bundle/Brewfile.old  && \
-    mv $HOME/.profile/bundle/Brewfile $HOME/.profile/bundle/Brewfile.old && \
-    brew brewdle dump --file=$HOME/.profile/bundle/Brewfile
+    rm -rf $HOME/.dotfiles/bundle/Brewfile.old  && \
+    mv $HOME/.dotfiles/bundle/Brewfile $HOME/.dotfiles/bundle/Brewfile.old && \
+    brew brewdle dump --file=$HOME/.dotfiles/bundle/Brewfile
 }

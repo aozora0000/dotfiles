@@ -16,19 +16,19 @@ wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - |
 ```.shell
 cd $HOME
 brew install git
-git clone git@github.com:aozora0000/dotfiles.git ./.profile
+git clone git@github.com:aozora0000/dotfiles.git ./.dotfiles
 ```
 
 ## 3. homebrewからパッケージをインストール
 
 ```.shell
-cd $HOME/.profile
+cd $HOME/.dotfiles
 sh bundleinstall.sh
 
 ~~~~~~~~~省略~~~~~~~~~~
 
 // 終了したらzshrcを上書き
-echo "source ~/.profile/.bootstrap" > ~/.zshrc
+echo "source ~/.dotfiles/.bootstrap" > ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -50,7 +50,7 @@ ssh-config
 ```.shell
 mkdir -p ~/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-echo "source ~/.profile/.vimrc" > ~/.vimrc
+echo "source ~/.dotfiles/.vimrc" > ~/.vimrc
 
 ~/.vim/bundle/neobundle.vim/bin/neoinstall
 ```

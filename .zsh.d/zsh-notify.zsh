@@ -1,6 +1,6 @@
-if [ -s "$HOME/.profile/.zsh.d/zsh-notify/notify.plugin.zsh" ]; then
-    source $HOME/.profile/.zsh.d/zsh-notify/notify.plugin.zsh
+if [ -s "$HOME/.dotfiles/.zsh.d/zsh-notify/notify.plugin.zsh" ]; then
+    source $HOME/.dotfiles/.zsh.d/zsh-notify/notify.plugin.zsh
 else
-    git clone https://github.com/marzocchi/zsh-notify $HOME/.profile/.zsh.d/zsh-notify
-    source $HOME/.profile/.zsh.d/zsh-notify/notify.plugin.zsh
+    git clone https://github.com/marzocchi/zsh-notify $HOME/.dotfiles/.zsh.d/zsh-notify
+    source $HOME/.dotfiles/.zsh.d/zsh-notify/notify.plugin.zsh
 fi

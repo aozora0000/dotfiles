@@ -1,31 +1,31 @@
 #################################
 # 環境設定ファイル呼び出し
 #################################
-source $HOME/.profile/.env
-source $HOME/.profile/.path
+source $HOME/.dotfiles/.env
+source $HOME/.dotfiles/.path
 
 #################################
 # エイリアスファイル呼び出し
 #################################
-source $HOME/.profile/.alias
+source $HOME/.dotfiles/.alias
 
 #################################
 # ファンクション呼び出し
 #################################
-source $HOME/.profile/.functions
+source $HOME/.dotfiles/.functions
 
 #################################
 # .functions.d 呼び出し
 #################################
-read-dir $HOME/.profile/.functions.d/
+read-dir $HOME/.dotfiles/.functions.d/
 
 
 #################################
 # .zsh.d 呼び出し
 #################################
-read-dir $HOME/.profile/.zsh.d/
+read-dir $HOME/.dotfiles/.zsh.d/
 
 #################################
 # .brew.d 呼び出し
 #################################
-read-dir $HOME/.profile/.brew.d/
+read-dir $HOME/.dotfiles/.brew.d/

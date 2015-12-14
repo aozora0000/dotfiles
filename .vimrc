@@ -1,7 +1,7 @@
-source ~/.profile/.vim.conf/.neobundle
-source ~/.profile/.vim.conf/.theme
-source ~/.profile/.vim.conf/.basic
-source ~/.profile/.vim.conf/.format
-source ~/.profile/.vim.conf/.keymap
-source ~/.profile/.vim.conf/.search
-source ~/.profile/.vim.conf/.color
+source ~/.dotfiles/.vim.conf/.neobundle
+source ~/.dotfiles/.vim.conf/.theme
+source ~/.dotfiles/.vim.conf/.basic
+source ~/.dotfiles/.vim.conf/.format
+source ~/.dotfiles/.vim.conf/.keymap
+source ~/.dotfiles/.vim.conf/.search
+source ~/.dotfiles/.vim.conf/.color
