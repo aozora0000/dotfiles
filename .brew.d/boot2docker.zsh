@@ -1,6 +1,6 @@
 #################################
 # boot2docker起動時initialize
 #################################
-if [ "`boot2docker status`" = "running" ]; then
-    $(boot2docker shellinit)
+if [ "`docker-machine start default`" = 'Machine "default" is already running.' ]; then
+    eval "$(docker-machine env default)"
 fi
