@@ -9,7 +9,7 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
     NeoBundleFetch 'Shougo/neobundle.vim'
-    source ~/.profile/.vim.conf/.bundlerc
+    source ~/.dotfiles/.vim.conf/.bundlerc
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck

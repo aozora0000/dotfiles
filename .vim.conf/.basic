@@ -22,3 +22,7 @@ set statusline+=[%{&fileformat}]
 set statusline+=[%{has('multi_byte')&&\&fileencoding!=''?&fileencoding:&encoding}]
 "ファイルタイプ表示
 set statusline+=%y
+"viモードを外す
+set nocompatible
+"バックスペース利用
+set backspace=indent,eol,start

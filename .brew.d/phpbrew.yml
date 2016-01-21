@@ -1,0 +1,40 @@
+variants:
+  dev:
+    bcmath:
+    bz2:
+    fileinfo:
+    json:
+    mbstring:
+    readline:
+    iconv:
+    intl:
+    icu:
+      - --with-icu-dir=/usr/local/opt/icu4c
+    gettext:
+      - --with-gettext=/usr/local/opt/gettext
+    pcre:
+    readline:
+    xml:
+      - --with-libxml-dir=/usr/local/opt/libxml2
+    dom:
+    xmlrpc:
+    soap:
+    zlib:
+      - --with-zlib=/usr/local/opt/zlib
+      - --with-zlib-dir=/usr/local/opt/zlib
+    gd:
+      - --with-gd
+      - --with-jpeg-dir=/usr/local/opt/jpeg
+      - --with-png-dir=/usr/local/opt/libpng
+      - --with-freetype-dir=/usr/local/opt/freetype
+      - --enable-gd-native-ttf
+      - --enable-gd-jis-conv
+    openssl:
+    mcrypt:
+    curl:
+    mysql:
+    pdo:
+    sqlite:
+extensions:
+  dev:
+    xdebug: stable

@@ -28,7 +28,7 @@ alias phpcbf='phpcbf --standard=PSR2'
 alias php-cs-fixer='php-cs-fixer --level=psr2 --fixers=-psr0,-indentation,-braces fix'
 alias ctags=/usr/local/Cellar/ctags/5.8_1/bin/ctags
 alias artisan="$(which php) artisan"
-alias phpunit="$(which phpunit) --no-globals-backup"
+#alias phpunit="$(which phpunit) --no-globals-backup"
 
 #################################
 # Mecab用

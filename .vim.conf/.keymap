@@ -1,4 +1,1 @@
-"viモードを外す
-set nocompatible
-"バックスペース利用
-set backspace=indent,eol,start
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
