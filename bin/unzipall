@@ -1,0 +1,7 @@
+#/bin/bash
+for file in *.zip; do
+	if [ -e "${file}" ]; then
+		unzip -qq "${file}" # && \
+#		rm -r "$file"
+	fi
+done

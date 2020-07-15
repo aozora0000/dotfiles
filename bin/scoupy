@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var request = require("request");
+const {JSDOM} = require("jsdom");
+const {window} = new JSDOM("");
+const $ = require("jquery")(window);
+
+request({
+    url: process.argv[2],
+    method: "GET"
+}, function (error, response, document) {
+    eval(process.argv[3])
+});

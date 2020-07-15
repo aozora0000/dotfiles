@@ -1,0 +1,7 @@
+#/bin/bash
+for file in *.rar; do
+	if [ -e "${file}" ]; then
+		rar x "${file}" && \
+		rm -r "$file"
+	fi
+done

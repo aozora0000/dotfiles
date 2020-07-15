@@ -1,0 +1,11 @@
+--2019-02-27 09:02:35--  https://raw.githubusercontent.com/moondewio/git-infer/master/git-infer
+raw.githubusercontent.com (raw.githubusercontent.com) をDNSに問いあわせています... 151.101.128.133, 151.101.192.133, 151.101.0.133, ...
+raw.githubusercontent.com (raw.githubusercontent.com)|151.101.128.133|:443 に接続しています... 接続しました。
+HTTP による接続要求を送信しました、応答を待っています... 200 OK
+長さ: 2285 (2.2K) [text/plain]
+`git-infer' に保存中
+
+     0K ..                                                    100% 9.27M=0s
+
+2019-02-27 09:02:35 (9.27 MB/s) - `git-infer' へ保存完了 [2285/2285]
+

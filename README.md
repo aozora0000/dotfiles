@@ -4,12 +4,16 @@
 
 ディスクユーティリティーにてファイル権限の修復を実行
 
-## 1. Homebrew/Oh-My-Zshインストール
+## 1. Homebrewインストール
 
 ```.shell
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
+
+## 2. Zsh/Zplug/Preztoインストール
+```.shell
+brew install zsh
+
 
 ## 2. Gitインストール/dotfileをクローン
 

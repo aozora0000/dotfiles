@@ -1,0 +1,45 @@
+variants:
+    original:
+        bcmath:
+        cli:
+        ctype:
+        fileinfo:
+        dom:
+        intl:
+        ipc:
+        bz2:
+        ftp:
+        json:
+        gettext:
+        pcre:
+        readline:
+        sockets:
+        tokenizer:
+        xml:
+        soap:
+        zip:
+        zlib:
+        opcache:
+        mbregex:
+        mbstring:
+        mhash:
+        mcrypt:
+        iconv:
+        pcntl:
+        curl:
+        mysql:
+        pdo:
+        pear:
+        hash:
+        phar:
+        posix:
+        sqlite:
+        exif:
+        filter:
+        fpm:
+        phpdbg:
+        pgsql:
+        yaml:
+extensions:
+    stable:
+        xdebug: stable

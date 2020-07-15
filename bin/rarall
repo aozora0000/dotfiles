@@ -1,0 +1,8 @@
+#/bin/bash
+for folder in */; do 
+	if [ -d "${folder}" ]; then
+		rm -r $folder*.url
+		rar a -m0 "${folder%/}.rar" "$folder" && \
+		rm -r "$folder"
+	fi
+done

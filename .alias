@@ -3,6 +3,7 @@
 #################################
 alias ll='ls -la'
 alias zshconfig="atom ~/.zshrc"
+alias bash="/usr/local/bin/bash"
 
 #################################
 # Selenium-Server用
@@ -34,3 +35,9 @@ alias artisan="$(which php) artisan"
 # Mecab用
 #################################
 alias mecab='mecab -d `mecab-config --dicdir`/mecab-ipadic-neologd'
+
+
+##########
+# chromium用
+##########
+alias chrome='/Applications/Chromium.app/Contents/MacOS/Chromium'

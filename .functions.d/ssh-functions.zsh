@@ -2,7 +2,8 @@
 # sshコンフィグファイル結合
 #################################
 ssh-config() {
-    mv ~/.ssh/config{,.bak}
+    rm -f ~/.ssh/known_hosts ~/.ssh/config.bak
+    mv ~/.ssh/config ~/.ssh/config.bak
     cat ~/.ssh/conf.d/*.conf > ~/.ssh/config
     echo > ~/.ssh/known_hosts
 }

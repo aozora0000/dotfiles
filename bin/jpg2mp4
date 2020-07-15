@@ -1,0 +1,34 @@
+#! /usr/bin/env python3
+import glob
+import os
+import sys
+
+import cv2
+
+output_dirpath = os.getcwd()
+
+# VideoCapture を作成する。
+img_path = os.path.join(output_dirpath, '%6d.jpg')
+cap = cv2.VideoCapture(img_path)
+
+# 画像の大きさを取得
+width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
+# フレームレートを設定
+fps = sys.argv[1]
+print('width: {}, height: {}, fps: {}'.format(width, height, fps))
+
+# VideoWriter を作成する。
+fourcc = cv2.VideoWriter_fourcc(*'X264')
+writer = cv2.VideoWriter(sys.argv[2] + '.mp4', fourcc, int(fps), (width, height))
+
+while True:
+   ret, frame = cap.read()
+   if not ret:
+       break  # 映像取得に失敗
+
+   writer.write(frame)  # フレームを書き込む。
+
+writer.release()
+cap.release()

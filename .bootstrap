@@ -19,13 +19,17 @@ source $HOME/.dotfiles/.functions
 #################################
 read-dir $HOME/.dotfiles/.functions.d/
 
-
-#################################
-# .zsh.d 呼び出し
-#################################
-read-dir $HOME/.dotfiles/.zsh.d/
-
 #################################
 # .brew.d 呼び出し
 #################################
 read-dir $HOME/.dotfiles/.brew.d/
+
+#################################
+# Prezto 呼び出し
+#################################
+source $HOME/.dotfiles/prezto.zsh
+
+#################################
+# Prezto 呼び出し
+#################################
+read-dir $HOME/.dotfiles/.zplugin.d/

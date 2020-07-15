@@ -1,0 +1,77 @@
+#!/usr/bin/env ruby
+
+class Grapher
+  class << self
+
+    Props = {
+      :branch   => '[shape=box,style=filled,fillcolor="#ccffcc",color="#003300"]',
+      :commit   => '[style=filled,fillcolor="#ffffcc",color="#663333"]',
+      :ref     => '',
+      :relation => '[dir=back,color="#545443"]',
+      :current  =>  '[shape=box,style=filled,fillcolor="#ffcccc",color="#330000"]'
+    }
+
+    def refs
+      branches.inject({}) {|h,b|
+        h.tap { h[b] = `git log -1 #{b} --pretty=format:"%h"` }
+      }
+    end
+
+    def branches
+      @branches ||= cmd("git branch") {|b| b[2..-1] }
+    end
+
+    def commits
+      @commits ||= cmd("git log --pretty=format:\"%h\" #{@args.join ' '}")
+    end
+
+    def relations
+      @rels ||= cmd("git log --pretty=format:\"%h %p\" #{@args.join ' '}") { |l|
+        c, *parents = l.split
+        parents.map {|p| [p, c] }
+      }.flatten(1)
+    end
+
+    def run(*args)
+      @args = args
+      puts "digraph G {"
+      puts "node [fontsize=8,fontname=\"Monaco bold\"," +
+           "height=0.3,fontcolor=\"#333333\"];"
+
+      puts "\n// Commits"
+      commits.each   {|c|
+        puts %("#{c}" #{Props[:commit]};)
+      }
+
+      puts "\n// Branches"
+      puts %("#{current_branch}" #{Props[:current]};)
+      (branches - [current_branch]).each  {|b|
+        puts %("#{b}" #{Props[:branch]};) if commits.member?(refs[b])
+      }
+
+      puts "\n// Relations"
+      relations.each {|p,c|
+        puts %("#{c}" -> "#{p}" #{Props[:relation]};)
+      }
+
+      puts "\n// Refs"
+      refs.each {|r,c|
+        puts %("#{r}" -> "#{c}" #{Props[:ref]};) if commits.member?(c)
+      }
+      puts "}"
+    end
+
+    def current_branch
+      cmd("git branch").select {|l| l =~ /^\*/ }.first.strip[2..-1]
+    end
+
+    private
+
+    def cmd(c, &blk)
+      `#{c}`.split($/).map(&blk || proc {|a| a })
+    end
+
+  end
+end
+
+Grapher.run(*ARGV)

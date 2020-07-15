@@ -1,0 +1,6 @@
+#/bin/bash
+for file in *.*; do 
+	if [ -e "${file}" ]; then
+		image-divider "${file}"
+	fi
+done

@@ -1,0 +1,9 @@
+export GO15VENDOREXPERIMENT=1
+export GO111MODULE=auto
+# go
+export GOVERSION=1.12.5
+export GOROOT_PATH="$HOME/goroots/$GOVERSION"
+export GOROOT="$GOROOT_PATH"
+export GOPATH="$HOME/go/$GOVERSION"
+export PATH="$GOROOT_PATH:$PATH"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"

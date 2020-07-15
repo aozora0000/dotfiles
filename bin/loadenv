@@ -1,0 +1,6 @@
+#/bin/bash -x
+
+cat .env | while read line
+do
+	echo "export $line"
+done
